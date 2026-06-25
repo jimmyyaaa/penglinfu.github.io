@@ -152,7 +152,7 @@ export default function App() {
         <nav className="relative mx-auto max-w-6xl px-4 py-3 sm:flex sm:items-center sm:justify-between sm:px-5 sm:py-4">
           <div className="flex items-center justify-between">
             <a href="#home" className="text-sm font-semibold tracking-wide text-zinc-900">
-              FU Penglin
+              Penglin FU
             </a>
             <button
               type="button"
@@ -225,9 +225,9 @@ function HomePage() {
   return (
     <section className="mx-auto grid max-w-6xl gap-8 px-4 py-10 sm:px-5 sm:py-14 md:grid-cols-[1fr_280px] md:items-center md:py-24">
       <div>
-        <p className="mb-4 text-lg font-semibold uppercase tracking-wide text-emerald-700 sm:text-xl md:mb-5 md:text-2xl">
-          傅鹏霖 / FU Penglin / Jimmy
-        </p>
+        <h1 className="mb-4 text-lg font-semibold uppercase tracking-wide text-emerald-700 sm:text-xl md:mb-5 md:text-2xl">
+          Penglin FU / 傅鹏霖 / Jimmy
+        </h1>
         <div className="max-w-2xl space-y-4 text-base leading-7 text-zinc-700 sm:leading-8 md:text-lg">
           <p>
             I am a PhD student at the HKU School of Computing and Data Science,
@@ -254,7 +254,7 @@ function HomePage() {
       <aside className="w-full max-w-[360px] justify-self-center rounded-lg border border-zinc-200 bg-white p-3 shadow-sm sm:p-4 md:max-w-[280px] md:justify-self-end">
         <img
           src="/profile/avatar.jpg"
-          alt="FU Penglin"
+          alt="Portrait of Penglin FU"
           className="aspect-[4/5] w-full rounded-md object-cover object-center"
         />
         <div className="mt-3 flex items-center justify-center gap-3 sm:mt-4">
@@ -360,7 +360,7 @@ function SiteFooter() {
   return (
     <footer>
       <div className="mx-auto max-w-6xl px-5 py-10 text-center text-sm text-zinc-600">
-        <p>© {new Date().getFullYear()} FU Penglin</p>
+        <p>© {new Date().getFullYear()} Penglin FU</p>
       </div>
     </footer>
   );
