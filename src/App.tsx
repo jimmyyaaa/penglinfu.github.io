@@ -114,7 +114,7 @@ const socialLinks = [
   },
   {
     label: 'Google Scholar',
-    href: 'https://scholar.google.com/scholar?q=Penglin+Fu',
+    href: 'https://scholar.google.com/citations?user=QSso6z4AAAAJ&hl=en',
     icon: 'scholar',
   },
 ] satisfies Array<{ label: string; href: string; icon: SocialIconName }>;
