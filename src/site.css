@@ -1,0 +1,431 @@
+.site {
+  background: #fafaf7;
+  color: #252e2a;
+  min-height: 100vh;
+  font-family: Inter,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.site a {
+  transition: color .2s;
+}
+
+.site a:hover {
+  color: #178067;
+}
+
+.site-nav, .site main,.site-footer {
+  max-width: 1120px;
+  margin: auto;
+}
+
+.site-nav {
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #e2e7df;
+}
+
+.wordmark {
+  font-size: 20px;
+  font-weight: 650;
+  letter-spacing: -.7px;
+}
+
+.wordmark span {
+  color: #16735d;
+}
+
+.site-nav nav {
+  display: flex;
+  gap: 32px;
+  font-size: 13px;
+  color: #59645e;
+}
+
+.intro {
+  display: grid;
+  grid-template-columns: 1fr 265px;
+  gap: 100px;
+  align-items: center;
+  padding: 78px 0 76px;
+}
+
+.eyebrow {
+  font-size: 10px;
+  font-weight: 650;
+  letter-spacing: 2px;
+  color: #267761;
+  margin: 0 0 20px;
+}
+
+.intro h1 {
+  font-size: 64px;
+  line-height: 1.1;
+  letter-spacing: -3px;
+  font-weight: 550;
+  margin: 0;
+}
+
+.name-detail {
+  margin: 12px 0 26px;
+  font-size: 17px;
+  color: #6b766f;
+  letter-spacing: 1px;
+}
+
+.name-detail span {
+  margin: 0 9px;
+  color: #a4aca6;
+}
+
+.role {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0 0 18px;
+}
+
+.bio {
+  font-size: 15px;
+  line-height: 1.85;
+  color: #647069;
+  max-width: 610px;
+}
+
+.bio p+p {
+  margin-top: 12px;
+}
+
+.bio a {
+  color: #18725b;
+  border-bottom: 1px solid #bbcec2;
+}
+
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-top: 26px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.contact-links span {
+  color: #7b8981;
+  margin-left: 3px;
+}
+
+.portrait img {
+  width: 100%;
+  aspect-ratio: 4/5;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.portrait figcaption {
+  font-size: 10px;
+  color: #8a938c;
+  margin-top: 12px;
+  text-align: center;
+}
+
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 26px;
+  border-top: 1px solid #dfe5dc;
+  padding-top: 27px;
+}
+
+.section-heading h2 {
+  font-size: 22px;
+  letter-spacing: -.6px;
+  font-weight: 550;
+  margin: 0;
+}
+
+.featured-project {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 38px;
+  align-items: center;
+}
+
+.project-media {
+  display: block;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #e9ede5;
+}
+
+.project-media video {
+  width: 100%;
+  aspect-ratio: 16/10;
+  object-fit: cover;
+  display: block;
+}
+
+.project-copy .eyebrow {
+  margin-bottom: 10px;
+  letter-spacing: 1.2px;
+  font-size: 9px;
+}
+
+.project-copy .eyebrow span {
+  color: #bdc8be;
+  padding: 0 6px;
+}
+
+.project-name {
+  font-size: 32px;
+  letter-spacing: -1px;
+  margin: 0 0 6px;
+  font-weight: 600;
+}
+
+.project-title {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  margin: 0;
+}
+
+.project-summary {
+  color: #748075;
+  font-size: 13px;
+  line-height: 1.7;
+  margin: 12px 0;
+}
+
+.authors {
+  font-size: 11px;
+  color: #7a857e;
+  line-height: 1.7;
+}
+
+.authors strong {
+  color: #344d41;
+}
+
+.project-links {
+  display: flex;
+  gap: 22px;
+  margin-top: 17px;
+  font-size: 12px;
+  color: #156c52;
+  font-weight: 600;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 22px;
+}
+
+.photo-grid button {
+  display: block;
+  border: 0;
+  padding: 0;
+  background: none;
+  width: 100%;
+  cursor: zoom-in;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.photo-grid img {
+  width: 100%;
+  aspect-ratio: 3/2;
+  object-fit: cover;
+  transition: transform .3s;
+}
+
+.photo-grid button:hover img {
+  transform: scale(1.03);
+}
+
+.photo-grid figcaption {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-top: 12px;
+  font-size: 12px;
+}
+
+.photo-grid figcaption strong {
+  font-weight: 500;
+}
+
+.photo-grid figcaption span {
+  font-size: 10px;
+  color: #8b958d;
+}
+
+.site-footer {
+  display: flex;
+  gap: 25px;
+  margin-top: 65px;
+  padding: 25px 0 30px;
+  border-top: 1px solid #e2e7df;
+  color: #889288;
+  font-size: 11px;
+}
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: #142019ee;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 25px;
+}
+
+.lightbox img {
+  max-width: 100%;
+  max-height: 85vh;
+  object-fit: contain;
+  cursor: default;
+}
+
+.lightbox button {
+  position: absolute;
+  right: 30px;
+  top: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+.site a:focus-visible,.site button:focus-visible {
+  outline: 2px solid #198462;
+  outline-offset: 5px;
+}
+
+@media (max-width:1200px) {
+  .site-nav,.site main,.site-footer {
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+  .intro {
+    gap: 60px;
+  }
+}
+
+@media (max-width:700px) {
+  .site-nav {
+    height: 76px;
+  }
+  .site-nav nav {
+    gap: 16px;
+    font-size: 11px;
+  }
+  .intro {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 42px 0;
+  }
+  .intro h1 {
+    font-size: 48px;
+  }
+  .portrait {
+    max-width: 220px;
+    grid-row: 2;
+  }
+  .intro .eyebrow {
+    font-size: 9px;
+  }
+  .featured-project {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .photo-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .section-heading h2 {
+    font-size: 20px;
+  }
+  .contact-links {
+    gap: 19px;
+  }
+  .site-footer {
+    flex-wrap: wrap;
+  }
+  .bio {
+    font-size: 14px;
+  }
+  .page-heading {
+    padding-top: 40px;
+  }
+  .page-heading h1 {
+    font-size: 32px;
+  }
+}
+
+.site main {
+  width: calc(100% - 12%);
+  flex: 1;
+}
+
+.site-nav,.site-footer {
+  width: calc(100% - 12%);
+}
+
+.site-nav nav a[aria-current="page"] {
+  color: #176e56;
+  font-weight: 650;
+  text-decoration: underline;
+  text-underline-offset: 8px;
+  text-decoration-thickness: 2px;
+}
+
+.all-research {
+  font-size: 12px;
+  color: #176e56;
+}
+
+.page-heading {
+  padding: 62px 0 38px;
+}
+
+.page-heading h1 {
+  font-size: 38px;
+  letter-spacing: -1.2px;
+  font-weight: 550;
+  margin: 0 0 12px;
+}
+
+.page-heading>p:last-child {
+  font-size: 14px;
+  color: #748075;
+}
+
+.gallery-group {
+  margin-bottom: 42px;
+}
+
+.gallery-group h2 {
+  font-size: 20px;
+  font-weight: 550;
+  margin-bottom: 20px;
+}
+
+/* Native dialog supplies focus trapping, Escape dismissal, and focus restoration. */
+.lightbox {
+  border: 0;
+  margin: 0;
+  width: 100vw;
+  height: 100dvh;
+  max-width: none;
+  max-height: none;
+}
+.lightbox:not([open]) { display: none; }
+.lightbox::backdrop { background: #142019ee; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .site *, .site *::before, .site *::after { transition: none; }
+}
